@@ -22,7 +22,7 @@ Test implements 'AppiumDriverprovider' interface and implements getAppiumDriver(
 
 all the desired capabilities required for a test to run on testobject cloud are passed via testng.xml file
 
-<test name="OIShoppingListTest">
+	<test name="OIShoppingListTest">
 	    <parameter name="testobject_api_key" value="24918D348DF845808356FC21018CF57A"/>
         <parameter name="testobject_app_id" value="1"/>
         <parameter name="testobject_device" value="Samsung_Google_Nexus_10_P8110_real"/>
@@ -43,11 +43,13 @@ all the desired capabilities required for a test to run on testobject cloud are 
 		</classes>
 	</test>
 	
-	and watcher is also configured in testng.xml
+and watcher is also configured in testng.xml
+
+
 	<listeners>
          <listener class-name="org.testobject.appium.testng.TestObjectTestNGTestResultWatcher" />
          <!-- <listener class-name="com.seltaf.customlisteners.ExtentReporterNG" /> -->
-    </listeners>
+    	</listeners>
     
   look at testng.xml for more details.
   
