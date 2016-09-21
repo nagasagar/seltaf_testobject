@@ -1,0 +1,13 @@
+Steps for using Grid:
+
+Step1 : Download latest stable version of Selenium-standalone-server.jar from https://selenium-release.storage.googleapis.com/index.html and place it in the same folder as this file.
+
+Step2 : edit startnode.bat and startserver.bat with the filename of the downloaded jar file.
+
+Step3 : Start server using startserver.bat
+
+Step4 : update GridNodeConfig.json with hub url
+
+Step5 : update GridNodeConfig.json with required browser details
+
+step6 : Start node using startnode.bat (in the execution machine - copy this folder to execution/node machine )

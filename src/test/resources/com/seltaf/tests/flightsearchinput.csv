@@ -1,0 +1,6 @@
+TestEntity.TestCaseId,TestEntity.TestMethod,FlightSearchinput.triptype,FlightSearchinput.no_passengers,FlightSearchinput.departuredate,FlightSearchinput.returndate,FlightSearchinput.source,FlightSearchinput.dest,FlightSearchinput.airlinePreference,FlightSearchinput.serviceClass,Passenger.FirstName,Passenger.LastName,Passenger.MealPreference,CreditCard.cardnumber,CreditCard.cardtype,CreditCard.cardexpiry,CreditCard.FirstName,CreditCard.MiddleName,CreditCard.LastName,TestEntity.TestTags
+TestLinkTestCaseID1,flightBookingTest,oneway,1,5/24/2016,5/27/2016,Acapulco,London,No Preference,Business,Nagasagar,Dasa,Hindu,9876543210,American Express,09 2000,Mahesh,S,Nanda,x
+TestLinkTestCaseID2,flightBookingTest,return,1,5/25/2016,5/28/2016,Frankfurt,Seattle,Blue Skies Airlines,Coach,Selenium,Grid,Muslim,2310987654,Visa,12 2001,Nag,chiranth,peri,y
+TestLinkTestCaseID3,flightBookingTest,oneway,1,5/26/2016,5/29/2016,Acapulco,London,Unified Airlines,Business,Web,Driver,Vegetarian,78687654321,Discover,09 2000,Mahesh,S,Nanda,x
+TestLinkTestCaseID4,flightBookingTest,return,1,5/27/2016,5/30/2016,Frankfurt,New York,Pangea Airlines,First,Test,EnGe,Low Calorie,1237589709,DinersClub,12 2001,Nag,chiranth,peri,y
+,,,,,, ,,,,,,,,,,,,,

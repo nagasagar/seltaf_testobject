@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+<CreateNewListDatadrivenTest>
+    <dataset>
+        <testentitiy>
+            <TestMethod>CreateNewListDatadrivenTest</TestMethod>
+            <TestcaseID>TC001</TestcaseID>
+            <TestTags>x,y</TestTags>
+        </testentitiy>
+        <OIList>
+	        <name>groceries</name>
+	        <item>
+	            <name>bread</name>
+			</item>
+	        <item>
+				<name>milk</name>
+			</item>
+	    </OIList>
+    </dataset>
+	<dataset>
+	    <testentitiy>
+	        <TestMethod>CreateNewListDatadrivenTest</TestMethod>
+            <TestcaseID>TC002</TestcaseID>
+            <TestTags>y</TestTags>
+        </testentitiy>
+	    <OIList>
+        	<name>party</name>
+        	<item>
+            	<name>pizza</name>
+			</item>
+        	<item>
+				<name>beer</name>
+			</item>
+        	<item>
+				<name>cola</name>
+			</item>
+    	</OIList>
+	</dataset>  
+</CreateNewListDatadrivenTest>
+</testdata>

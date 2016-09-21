@@ -1,0 +1,97 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="Suite1" 
+	verbose="1" thread-count="6">
+    
+    <listeners>
+         <listener class-name="org.testobject.appium.testng.TestObjectTestNGTestResultWatcher" />
+         <listener class-name="com.seltaf.customlisteners.ExtentReporterNG" />
+    </listeners>
+    
+    <parameter name="appURL" value="http://newtours.demoaut.com/mercurywelcome.php"/>
+    <parameter name="browser" value="chrome" />  <!--"*firefox, *chrome, *iexplore, *android"-->
+    <parameter name="runMode" value="LOCAL" />
+    <parameter name="webDriverGrid" value="http://localhost:4444/wd/hub" />
+    <parameter name="useFirefoxDefaultProfile" value="false"/>
+    <parameter name="softAssertEnabled" value="true" />
+    <!-- <parameter name="dpTagsInclude" value="x"/>-->
+   <!--
+	<test name="AndroidAppTest">
+		<parameter name="browser" value="android" />
+	    <parameter name="testType" value="app" />
+        <parameter name="appiumServerURL" value="http://localhost:4723/wd/hub"/>
+        <parameter name="automationName" value="Appium"/>
+        <parameter name="platform" value="Android"/>
+        <parameter name="mobilePlatformVersion" value="5.1"/>
+        <parameter name="deviceName" value="BX903HYQWF"/>
+        <parameter name="appPackage" value="com.android.calculator2"/>
+        <parameter name="appActivity" value="com.android.calculator2.Calculator"/>
+        <parameter name="browserName" value=""/>
+        <parameter name="newCommandTimeout" value="120"/>
+        <parameter name="parallel" value="false"/>
+		<classes>
+			<class name="com.seltaf.tests.AndroidAppTest" />
+		</classes>
+		<parameter name="testobject_api_key" value="4D5A942096094430B61C5936D04466BF"/>
+        <parameter name="testobject_app_id" value="1"/>
+        <parameter name="testobject_device" value="LG_Nexus_4_E960_real"/>
+	</test>-->
+	 <test name="OIShoppingListTest">
+	    <parameter name="testobject_api_key" value="24918D348DF845808356FC21018CF57A"/>
+        <parameter name="testobject_app_id" value="1"/>
+        <parameter name="testobject_device" value="Samsung_Google_Nexus_10_P8110_real"/>
+	    <parameter name="browser" value="android" />
+	    <parameter name="testType" value="app" />
+        <parameter name="appiumServerURL" value="http://appium.testobject.com/wd/hub"/>        
+        <parameter name="automationName" value="Appium"/>
+        <parameter name="platform" value="Android"/>
+        <parameter name="mobilePlatformVersion" value="5.1"/>
+        <parameter name="deviceName" value="BX903HYQWF"/>
+        <parameter name="appPackage" value="org.openintents.shopping"/>
+        <parameter name="appActivity" value="org.openintents.shopping.ShoppingActivity"/>
+        <parameter name="browserName" value=""/>
+        <parameter name="newCommandTimeout" value="120"/>
+        <parameter name="parallel" value="false"/>
+		<classes>
+			<class name="com.seltaf.tests.OIShoppingListTest" />
+		</classes>
+	</test>
+	<!--  <test name="TouchActionsTest">
+		<parameter name="browser" value="android" />
+	    <parameter name="testType" value="app" />
+        <parameter name="appiumServerURL" value="http://appium.testobject.com/wd/hub"/>
+        <parameter name="testobject_api_key" value="4D5A942096094430B61C5936D04466BF"/>
+        <parameter name="testobject_app_id" value="1"/>
+        <parameter name="testobject_device" value="LG_Nexus_4_E960_real"/>
+        <parameter name="automationName" value="Appium"/>
+        <parameter name="platform" value="Android"/>
+        <parameter name="mobilePlatformVersion" value="5.1"/>
+        <parameter name="deviceName" value="BX903HYQWF"/>
+        <parameter name="appPackage" value="com.fortysevendeg.android.swipelistview"/>
+        <parameter name="appActivity" value="com.fortysevendeg.android.swipelistview.sample.activities.SwipeListViewExampleActivity"/>
+        <parameter name="browserName" value=""/>
+        <parameter name="newCommandTimeout" value="120"/>
+        <parameter name="explicitWaitTimeOut" value="30"/>
+        <parameter name="parallel" value="false"/>
+		<classes>
+			<class name="com.seltaf.tests.TouchActionsSwipeTest" />
+		</classes>
+	</test>
+	<test name="AndroidBrowserAPPTest">
+	    <parameter name="runMode" value="LOCAL" />
+	    <parameter name="browser" value="*android" />
+	    <parameter name="testType" value="Web" />
+        <parameter name="appiumServerURL" value="http://localhost:4723/wd/hub"/>
+        <parameter name="automationName" value="Appium"/>
+        <parameter name="platform" value="Android"/>
+        <parameter name="mobilePlatformVersion" value="5.1"/>
+        <parameter name="deviceName" value="BX903HYQWF"/>
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="appPackage" value="com.android.chrome"/>
+        <parameter name="newCommandTimeout" value="120"/>
+        <parameter name="parallel" value="false"/>
+		<classes>
+			<class name="com.seltaf.tests.MercuryToursFlightBookingTest" />
+		</classes>
+	</test>-->
+</suite>
