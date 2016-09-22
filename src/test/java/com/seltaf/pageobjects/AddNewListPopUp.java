@@ -17,7 +17,7 @@ import com.seltaf.webelements.TextFieldElement;
 public class AddNewListPopUp extends SeltafPageObject {
 	private static LabelElement identifier_element = new LabelElement("AddNewlist Popup Header",By.xpath("//android.widget.TextView[@text='Enter name of new shopping list']"));
 	
-	private static TextFieldElement NewList_TextField = new TextFieldElement("NewItem TextField", By.xpath("//android.widget.EditText[@text='e.g. wishlist, family list']"));
+	private static TextFieldElement NewList_TextField = new TextFieldElement("NewItem TextField", By.xpath("//android.widget.EditText[@resource-id='org.openintents.shopping:id/edittext']"));
 	
 	private static ButtonElement cancelNewListButton = new ButtonElement("cancelNewListButton", By.xpath("//android.widget.Button[@text='Cancel']"));
 	
@@ -29,6 +29,12 @@ public class AddNewListPopUp extends SeltafPageObject {
 
 	public OIShoppingListHomeScreen addNconfirm(OIList list) throws Exception {
 		NewList_TextField.sendKeys(list.getName());
+		confirmNewListButton.click();
+		return new OIShoppingListHomeScreen();
+	}
+	
+	public OIShoppingListHomeScreen addNconfirm(String listname) throws Exception {
+		NewList_TextField.sendKeys(listname);
 		confirmNewListButton.click();
 		return new OIShoppingListHomeScreen();
 	}

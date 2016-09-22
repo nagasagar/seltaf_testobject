@@ -69,12 +69,32 @@ public class OIShoppingListHomeScreen extends SeltafPageObject {
 		return this;
 	}
 	
+	public OIShoppingListHomeScreen addItem(String item) {
+		NewItem_TextField.sendKeys(item);
+		ADDButton.click();
+		return this;
+	}
+	
 	public boolean isItemPresent(Item item)
 	{
 		boolean flag = false ;
 		for (WebElement ele : ItemsList.getElements())
 		{
 			if(ele.getText().equalsIgnoreCase(item.getName()))
+			{
+				flag = true;
+				break;
+			}
+		}
+		return flag;
+	}
+	
+	public boolean isItemPresent(String item)
+	{
+		boolean flag = false ;
+		for (WebElement ele : ItemsList.getElements())
+		{
+			if(ele.getText().equalsIgnoreCase(item))
 			{
 				flag = true;
 				break;

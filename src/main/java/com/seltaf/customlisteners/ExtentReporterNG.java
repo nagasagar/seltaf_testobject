@@ -132,9 +132,9 @@ public class ExtentReporterNG implements IReporter, IInvokedMethodListener, ITes
                 ExtentTest scenario=null;
                 for(String message : Reporter.getOutput(result)) {
                 	
-                	if(message.equals("Started Scenario"))
+                	if(message.startsWith("Started Scenario"))
                 	{
-                		 scenario = extent.startTest("Scenario");
+                		 scenario = extent.startTest("Scenario - "+message.split("###")[1]);
                 	}
                 	
                 	if(scenario==null){
